@@ -54,7 +54,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 22px;
   }
   
   .socials-title {
@@ -90,4 +89,136 @@
     color: gray;
     font-size: 17px;
     font-weight: 500;
+  }
+  
+  
+  
+  
+  .burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    transition: all 0.3s ease;
+  }
+  
+  
+  @media(max-width: 1450px) {
+    
+  }
+  
+  @media(max-width: 1050px) {
+    .nav {
+        width: 750px;
+    }
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .top {
+        width: 700px;
+    }
+    hr {
+        width: 600px;
+    }
+  }
+  
+  @media screen and (max-width: 900px) {
+    .header__nav-list {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background-color: lightyellow;
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: center;
+        z-index: 1;
+    }
+  
+    .header__nav-list li {
+        margin: 20px 0;
+    }
+  
+    .burger {
+        display: flex;
+        z-index: 2;
+    }
+  
+    .header__nav-list.nav-active {
+        display: flex;
+    }
+  
+    .burger.toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+  
+    .burger.toggle .line2 {
+        opacity: 0;
+    }
+  
+    .burger.toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+    
+    .nav {
+        width: 500px;
+    }
+    .top {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    hr {
+        width: 300px;
+    }
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 200px;
+    }
+    .socials-title {
+        text-align: center;
+    }
+    .socials {
+        margin-top: 20px;
+    }
+  }
+  
+  @media(max-width: 530px) {
+    .nav {
+        width: 300px;
+    }
+    .eduv {
+        width: 100px;
+    }
+    .footer-logo {
+        width: 100px;
+    }
+    .idea {
+        width: 200px;
+    }
+  }
+  
+  @media(max-width: 400px) {
+     .bottom h3 {
+        width: 230px;
+        text-align: center;
+     }
   }

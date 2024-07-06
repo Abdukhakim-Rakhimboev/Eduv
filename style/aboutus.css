@@ -177,3 +177,53 @@ ul {
   color: crimson;
   transition: 0.15s;
 }
+
+
+
+
+@media(max-width: 1400px) {
+  .kim {
+    width: 385px;
+    height: 337px;
+  }
+  .iqbol {
+    width: 385px;
+    height: 337px;
+  }
+  .landing {
+    gap: 80px;
+  }
+}
+
+@media(max-width: 1050px) {
+  .landing {
+    display: flex;
+    flex-direction: column;
+  }
+  .faunders {
+    font-size: 40px;
+  }
+}
+
+
+@media(max-width: 600px) {
+  .kim {
+    width: 310px;
+    height: 300px;
+  }
+  .iqbol {
+    width: 310px;
+    height: 300px;
+  }
+}
+
+
+@media(max-width: 450px) {
+  .kimm {
+    box-shadow: none;
+    width: 330px;
+  }
+  .faunders {
+    margin-bottom: 10px;
+  }
+}
